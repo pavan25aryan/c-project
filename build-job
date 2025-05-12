@@ -1,0 +1,7 @@
+#!/bin/bash
+echo "Creating simple HTML site..."
+mkdir -p myapp
+echo "<h1>Hello from Jenkins Build Job!</h1>" > myapp/index.html
+
+echo "Packaging site..."
+tar -czf myapp.tar.gz myapp
